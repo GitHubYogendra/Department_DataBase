@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_image1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        tools:context=".EditorFaculty">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="206dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Faculty Details."
+            android:textColor="#000000"
+            android:textSize="27dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/FN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="60dp"
+            android:text="Faculty Name:"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/Facultyname1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/FN"
+            android:layout_marginTop="7dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Faculty Name Here"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/Fd"
+            android:layout_width="224dp"
+            android:layout_height="27dp"
+            android:layout_below="@+id/Facultyname1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="171dp"
+            android:text="Faculty ID:"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/FacId1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Fd"
+            android:layout_marginTop="3dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Faculty ID Here"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/FCA"
+            android:layout_width="335dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/FacId1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="113dp"
+            android:text="Faculty Communication Address:"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+
+        <EditText
+            android:id="@+id/FacCommAdd1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/FCA"
+            android:layout_marginTop="7dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Faculty Address Here"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/FP1"
+            android:layout_width="335dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/FacCommAdd1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="113dp"
+            android:text="Faculty Phone Number:"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/FacConphone11"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/FP1"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Faculty Contact Number Here"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/FP2"
+            android:layout_width="335dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/FacConphone11"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="113dp"
+            android:text="Faculty Another Phone Number:"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/FacConphone21"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/FP2"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Faculty Another Contact Number Here"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/AAdN"
+            android:layout_width="335dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/FacConphone21"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="113dp"
+            android:text="Faculty Aadhar Number:"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/FacAdhar11"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/AAdN"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Faculty Aadhar Number Here"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/ED"
+            android:layout_width="357dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/FacAdhar11"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="EDUCATIONAL QUALIFICATION."
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pdB"
+            android:layout_width="335dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/ED"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="113dp"
+            android:text="Faculty PH.D.:"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/PHDImag1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pdB"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Faculty PH.D Here"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/pdY"
+            android:layout_width="335dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/PHDImag1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="113dp"
+            android:text="Faculty PH.D. PassOut Year:"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/PHDQYear1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pdY"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Faculty PH.D Pass Out Year Here"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/pdC"
+            android:layout_width="335dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/PHDQYear1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="113dp"
+            android:text="Faculty PH.D. College Name:"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/PHDClgName1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pdC"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Faculty PH.D College Name Here"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/pdP"
+            android:layout_width="335dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/PHDClgName1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="113dp"
+            android:text="Faculty PH.D. Percentage:"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/PHDPer1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pdP"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Faculty PH.D Percentage Here"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/MB"
+            android:layout_width="335dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/PHDPer1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="113dp"
+            android:text="Faculty M.E Branch:"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/MEBranch1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MB"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Faculty M.E BRANCH Here"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/MP"
+            android:layout_width="335dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/MEBranch1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="113dp"
+            android:text="Faculty M.E PassOut Year:"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/MEQYear1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MP"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Faculty M.E Pass Out Year Here"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/MC"
+            android:layout_width="335dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/MEQYear1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="113dp"
+            android:text="Faculty M.E college Name:"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/MEClgName1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MC"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Faculty M.E College Name Here"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/MPe"
+            android:layout_width="335dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/MEClgName1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="113dp"
+            android:text="Faculty M.E Percentage:"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/MEPer1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MPe"
+            android:layout_marginTop="3dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Faculty M.E Percentage Here"
+            android:inputType="textPersonName" />
+        <TextView
+            android:id="@+id/BB"
+            android:layout_width="335dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/MEPer1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="113dp"
+            android:text="Faculty B.E Branch:"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/BEBranch1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BB"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Faculty B.E BRANCH Here"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/BY"
+            android:layout_width="335dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/BEBranch1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="113dp"
+            android:text="Faculty B.E PassOut Year:"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/BEQYear1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BY"
+            android:layout_marginTop="3dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Faculty B.E Pass Out Year Here"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/BC"
+            android:layout_width="335dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/BEQYear1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="113dp"
+            android:text="Faculty B.E College Name:"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/BEClgName1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BC"
+            android:layout_marginTop="7dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Faculty B.E College Name Here"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/BP"
+            android:layout_width="335dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/BEClgName1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="113dp"
+            android:text="Faculty B.E Percentage:"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/BEPer1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BEClgName1"
+            android:layout_marginTop="36dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Faculty B.E Percentage Here"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/HsB"
+            android:layout_width="335dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/BEPer1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="113dp"
+            android:text="Faculty HS.C Branch:"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/HSCBranch1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/HsB"
+            android:layout_marginTop="3dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Faculty H.SC BRANCH Here"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/HsY"
+            android:layout_width="335dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/HSCBranch1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="113dp"
+            android:text="Faculty HS.C PassOut Year:"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/HSCQYear1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/HsY"
+            android:layout_marginTop="3dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Faculty H.SC Pass Out Year Here"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/HsC"
+            android:layout_width="335dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/HSCQYear1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="113dp"
+            android:text="Faculty HS.C College Name:"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/HSCClgName1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/HsC"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Faculty H.SC College Name Here"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/HsP"
+            android:layout_width="335dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/HSCClgName1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="113dp"
+            android:text="Faculty HS.C Percentage:"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/HSCPer1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/HsP"
+            android:layout_marginTop="3dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Faculty H.SC Percentage Here"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/SB"
+            android:layout_width="335dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/HSCPer1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="113dp"
+            android:text="Faculty S.S.L.C Syllabus:"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/SSLCBranch1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SB"
+            android:layout_marginTop="3dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Faculty SSLC Here"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/SY"
+            android:layout_width="335dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/SSLCBranch1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="113dp"
+            android:text="Faculty S.S.L.C PassOut Year:"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/SSLCQYear1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SY"
+            android:layout_marginTop="0dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Faculty SSLC Pass Out Year Here"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/SC"
+            android:layout_width="335dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/SSLCQYear1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="113dp"
+            android:text="Faculty S.S.L.C College Name:"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/SSLCClgName1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SC"
+            android:layout_marginTop="6dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Faculty SSLC SCHOOL Name Here"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/SP"
+            android:layout_width="335dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/SSLCClgName1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="113dp"
+            android:text="Faculty S.S.L.C Percentage:"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/SSLCPer1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SP"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Faculty SSLC Percentage Here"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/EX"
+            android:layout_width="395dp"
+            android:layout_height="59dp"
+            android:layout_below="@+id/SSLCPer1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="0dp"
+            android:gravity="center"
+            android:text="EXPERIENCE:"
+            android:textColor="#000000"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/EA"
+            android:layout_width="335dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/EX"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="113dp"
+            android:text="Academic:"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/EXPAcd1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/EA"
+            android:layout_marginTop="19dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Faculty Academic Experience Here"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/EAI"
+            android:layout_width="335dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/EXPAcd1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="113dp"
+            android:text="Industry:"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/EXPInd1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/EAI"
+            android:layout_marginTop="19dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Faculty Industry Experience Here"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/PU"
+            android:layout_width="395dp"
+            android:layout_height="51dp"
+            android:layout_below="@+id/EXPInd1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="0dp"
+            android:gravity="center"
+            android:text="PUBLICATION:"
+            android:textColor="#000000"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/PUM"
+            android:layout_width="335dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/PU"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="113dp"
+            android:text="MemberShip:"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/PUBMember1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PUM"
+            android:layout_marginTop="19dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Faculty Total Membership Here"
+            android:inputType="textPersonName" />
+        <TextView
+            android:id="@+id/PUA"
+            android:layout_width="335dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/PUBMember1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="113dp"
+            android:text="Awards:"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/PUBAwards1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PUA"
+            android:layout_marginTop="19dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Faculty Total Awards Here"
+            android:inputType="textPersonName" />
+        <TextView
+            android:id="@+id/Don"
+            android:layout_width="335dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/PUBAwards1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="113dp"
+            android:text="*Don't Touch this:"
+            android:textColor="#b71c1c"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+        <EditText
+            android:id="@+id/Funiquq"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Don"
+            android:layout_marginTop="19dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Faculty unique Id"
+            android:inputType="textPersonName" />
+
+
+    </RelativeLayout>
+</ScrollView>

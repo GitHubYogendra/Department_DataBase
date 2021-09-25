@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_image_8">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    tools:context=".StudentDetails">
+
+    <TextView
+        android:text="Insert Student Details"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:textSize="21dp"
+        android:textColor="#000000"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView"/>
+
+    <EditText
+        android:id="@+id/Studentname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Name Here"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usn"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Student Phone Number Here"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/usn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Studentname"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter USN Here"
+        android:inputType="textPersonName" />
+
+
+    <EditText
+        android:id="@+id/StudentYear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Student Current Year"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/StudentSem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/StudentYear"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Student Current Sem"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/aadharNo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/StudentSem"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Student Aadhar Number Here"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/FatherName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aadharNo"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Student Father Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/MotherName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FatherName"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Student Mother Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/ComAdr"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MotherName"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Student Communication Address"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/BloodGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ComAdr"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Student Blood Group"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/FatherNum"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BloodGroup"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Student Father Phone Number"
+        android:inputType="phone" />
+    <EditText
+        android:id="@+id/MotherNum"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FatherNum"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Student Mother Phone Number"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/Hostel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MotherNum"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Hostel/Day Scoller"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/DipB"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Hostel"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Student Diploma Branch"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/DipCollege"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DipB"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Student Diploma College Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/DipPercentage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DipCollege"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Student Diploma Percentage"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/DipYear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DipPercentage"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter student Diploma passOut year"
+        android:inputType="phone" />
+    <EditText
+        android:id="@+id/HscB"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DipYear"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Student Hsc Branch"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/HscCollege"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/HscB"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Student Hsc College Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/HscPercentage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/HscCollege"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Student Hsc Percentage"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/HscYear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/HscPercentage"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter student Hsc passOut year"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/SslcB"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/HscYear"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Student Sslc"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/SslcCollege"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SslcB"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Student Sslc School Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/SslcPercentage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SslcCollege"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Student Sslc Percentage"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/SslcYear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SslcPercentage"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter student Sslc passOut year"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SslcYear"
+        android:layout_marginTop="17dp"
+        android:text="Click Here to Insert" />
+
+    <Button
+        android:text="Show records with search bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"/>
+
+</RelativeLayout>
+</ScrollView>

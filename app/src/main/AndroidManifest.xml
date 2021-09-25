@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.department_database">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Department_DataBase">
+        <activity
+            android:name=".EditorFaculty"
+            android:label="Edit Faculty Details"
+            android:exported="true" />
+        <activity
+            android:name=".SearchFaculty"
+            android:label="Search Faculty's"
+            android:parentActivityName=".Main_Menu"
+            android:exported="true" />
+        <activity
+            android:name=".FacultyDetails"
+            android:label="Add New Faculty Details"
+            android:parentActivityName=".Main_Menu"
+            android:exported="true" />
+        <activity
+            android:name=".EditorActivityStudent"
+            android:label="Edit Student Details"
+            android:exported="true" />
+        <activity
+            android:name=".SearchSQLiteActivity"
+            android:label="Search Student's"
+            android:parentActivityName=".Main_Menu"
+            android:exported="true" />
+        <activity
+            android:name=".StudentDetails"
+            android:label="Add New Student Details"
+            android:parentActivityName=".Main_Menu"
+            android:exported="true" />
+        <activity
+            android:name=".Log_In"
+            android:label="Log In"
+            android:exported="true" />
+        <activity
+            android:name=".Main_Menu"
+            android:label="Main Menu"
+            android:exported="true" />
+        <activity
+            android:name=".Reset_password"
+            android:label="Reset password"
+            android:exported="true" />
+        <activity
+            android:name=".Forget_password"
+            android:label="Forget Password"
+            android:exported="true" />
+        <activity
+            android:name=".Create_Account"
+            android:label="Create Account"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main_Menu" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

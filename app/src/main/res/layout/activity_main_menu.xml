@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_image7"
+        tools:context=".Main_Menu">
+
+        <TextView
+            android:id="@+id/button1"
+            android:layout_width="223dp"
+            android:layout_height="73dp"
+            android:layout_below="@+id/button5"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="57dp"
+            android:background="@drawable/card"
+            android:backgroundTint="#ff6f00"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:text="INSERT NEW FACULTY DETAILS"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_below="@id/button3"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="155dp"
+            android:layout_marginBottom="64dp"
+            android:background="@drawable/card"
+            android:backgroundTint="#c79100"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:text="SEARCH EXISTED FACULTY DETAILS"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/button3"
+            android:layout_width="266dp"
+            android:layout_height="72dp"
+            android:layout_below="@id/button1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="-126dp"
+            android:layout_marginLeft="51dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="23dp"
+            android:layout_toEndOf="@+id/button1"
+            android:background="@drawable/card"
+            android:backgroundTint="#00bcd4"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:text="INSERT NEW STUDENT DETAILS"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_below="@+id/button2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="137dp"
+            android:layout_marginTop="-22dp"
+            android:layout_marginEnd="28dp"
+            android:background="@drawable/card"
+            android:backgroundTint="#e53935"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:text="SEARCH EXISTED STUDENT DETAILS"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/button5"
+            android:layout_width="268dp"
+            android:layout_height="53dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="88dp"
+            android:layout_marginLeft="66dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="55dp"
+            android:background="@drawable/card"
+            android:paddingStart="20dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:text="WELCOME BACK..."
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</ScrollView>

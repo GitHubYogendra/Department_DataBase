@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Department_DataBase</string>
+    <string name="welcome_to_department">WELCOME TO DEPARTMENT...</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="title_activity_search_faculty_sqlite">SearchFacultySQliteActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>
