@@ -73,6 +73,8 @@ public class TeacherContact {
         public final static String COLUMN_FACULTY_PUBLICATION_MEMBERSHIP = "PUBLMemberT";
 
         public final static String COLUMN_FACULTY_PUBLICATION_AWARDS = "PUBLAwardsT";
+
+        public final static String COLUMN_FACULTY_Dep = "depT";
     }
 }
 

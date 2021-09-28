@@ -4,37 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/image5">
+    android:background="#ffffff">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:context=".Log_In">
 
-        <TextView
-            android:id="@+id/welcome"
+        <ImageView
+            android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="53dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="37dp"
-            android:paddingLeft="20dp"
-            android:text="@string/welcome_to_department"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="italic" />
+            android:layout_height="131dp"
+            app:srcCompat="@drawable/image1" />
+
 
         <EditText
             android:id="@+id/UserName1"
             android:layout_width="367dp"
             android:layout_height="61dp"
-            android:layout_below="@+id/welcome"
+            android:layout_below="@+id/imageView"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="27dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="-8dp"
             android:layout_marginEnd="18dp"
-            android:hint="UserName"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:hint="   UserName"
             android:inputType="textPersonName"
             android:paddingLeft="16dp"
             android:textAppearance="?android:attr/textAppearanceSmall" />
@@ -46,11 +41,13 @@
             android:layout_below="@+id/UserName1"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="9dp"
             android:layout_marginEnd="24dp"
-            android:hint="Password"
+            android:drawableStart="@drawable/ic_baseline_password_24"
+            android:hint="   Password"
             android:inputType="textPassword"
+            android:paddingLeft="16dp"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <TextView
@@ -79,7 +76,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="109dp"
-            android:layout_marginTop="17dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="134dp"
             android:background="@drawable/card"
             android:paddingLeft="10dp"
@@ -96,9 +93,9 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="52dp"
-            android:layout_marginTop="402dp"
-            android:layout_marginEnd="28dp"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="381dp"
+            android:layout_marginEnd="31dp"
             android:text="Don't have account?Click here.."
             android:textColor="#000000"
             android:textSize="20sp"

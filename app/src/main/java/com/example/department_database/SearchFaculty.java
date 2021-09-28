@@ -78,6 +78,7 @@ public class SearchFaculty extends AppCompatActivity {
                 String Industry = ListViewClickData.getFIndstry();
                 String Member = ListViewClickData.getFMember();
                 String FUnique = ListViewClickData.getFUnique();
+                String FDep = ListViewClickData.getFDepa();
 
                 intent.putExtra("FName",name);
                 intent.putExtra("Fid",Fid);
@@ -110,6 +111,7 @@ public class SearchFaculty extends AppCompatActivity {
                 intent.putExtra("Industry",Industry);
                 intent.putExtra("Member",Member);
                 intent.putExtra("FUniqe",FUnique);
+                intent.putExtra("FDep",FDep);
 
                 startActivity(intent);
                 Toast.makeText(SearchFaculty.this, ListViewClickData.getFname(), Toast.LENGTH_SHORT).show();
@@ -269,10 +271,13 @@ public class SearchFaculty extends AppCompatActivity {
 
                 String tempFUnic= cursor1.getString(FuniqueColumnIndex);
 
+                int FDepa = cursor1.getColumnIndex(TeacherContact.TeacherEntry.COLUMN_FACULTY_Dep);
+
+                String tempFDep= cursor1.getString(FDepa);
 
                 faculty = new Faculty(tempName, tempid,tempNumber1,tempNumber2,tempcom,tempAadhar,tempphd,tempyear,tempphdClg,tempPhdPer,
                        tempme,tempmeYear,tempmeClg,tempmePer,tempBe,tempBeClg,tempBeYear,tempBePer,tempHsc,tempHscClg,tempHscYear,tempHscPer,
-                        tempsslc,tempSslcclg,tempSslcYear,tempSslcPer,tempAward,tempmember,tempInd,tempAcar,tempFUnic);
+                        tempsslc,tempSslcclg,tempSslcYear,tempSslcPer,tempAward,tempmember,tempInd,tempAcar,tempFUnic,tempFDep);
 
                 FacultyList.add(faculty);
 

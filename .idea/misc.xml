@@ -26,7 +26,10 @@
         <entry key="app/src/main/res/layout/activity_log_in.xml" value="0.2427536231884058" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main_menu.xml" value="0.2427536231884058" />
-        <entry key="app/src/main/res/layout/activity_reset_password.xml" value="0.2427536231884058" />
+        <entry key="app/src/main/res/layout/activity_reset_password.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_search_catelogry.xml" value="0.21920289855072464" />
+        <entry key="app/src/main/res/layout/activity_search_cato.xml" value="0.21920289855072464" />
+        <entry key="app/src/main/res/layout/activity_search_fac.xml" value="0.21920289855072464" />
         <entry key="app/src/main/res/layout/activity_search_faculty.xml" value="0.24320652173913043" />
         <entry key="app/src/main/res/layout/activity_search_faculty_sqlite.xml" value="0.25679347826086957" />
         <entry key="app/src/main/res/layout/activity_search_sq_lite_faculty.xml" value="0.25679347826086957" />

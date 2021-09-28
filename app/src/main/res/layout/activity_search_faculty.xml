@@ -3,18 +3,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="16dp"
     tools:context=".SearchFaculty"
-    android:background="@drawable/back_image_8">
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="395dp"
+        android:layout_height="103dp"
+        app:srcCompat="@drawable/image1" />
 
     <EditText
         android:id="@+id/edittext2"
-        android:drawableStart="@drawable/ic_baseline_search_24"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="11dp"
+        android:drawableStart="@drawable/ic_baseline_search_24"
         android:gravity="center"
-        android:hint="Search Here"
-        />
+        android:hint="Search Here" />
 
     <ListView
         android:id="@+id/listView2"

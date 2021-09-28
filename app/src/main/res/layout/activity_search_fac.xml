@@ -19,8 +19,8 @@
 
         <TextView
             android:id="@+id/button1"
-            android:layout_width="223dp"
-            android:layout_height="73dp"
+            android:layout_width="222dp"
+            android:layout_height="58dp"
             android:layout_below="@+id/imageView"
             android:layout_alignParentStart="true"
             android:layout_marginStart="20dp"
@@ -29,7 +29,7 @@
             android:backgroundTint="#ff6f00"
             android:paddingLeft="10dp"
             android:paddingTop="8dp"
-            android:text="INSERT NEW FACULTY DETAILS"
+            android:text="SEARCH FACULTY BY NAME"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textColor="@color/white"
             android:textSize="18sp" />
@@ -37,8 +37,8 @@
 
         <TextView
             android:id="@+id/button3"
-            android:layout_width="266dp"
-            android:layout_height="72dp"
+            android:layout_width="273dp"
+            android:layout_height="53dp"
             android:layout_below="@id/button1"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="-115dp"
@@ -50,7 +50,24 @@
             android:backgroundTint="#00bcd4"
             android:paddingLeft="10dp"
             android:paddingTop="8dp"
-            android:text="INSERT NEW STUDENT DETAILS"
+            android:text="SEARCH FACULTY BY ID"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/button2"
+            android:layout_width="223dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/button3"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="72dp"
+            android:background="@drawable/card"
+            android:backgroundTint="#ff6f00"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:text="SEARCH FACULTY BY DAPARTMENT"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textColor="@color/white"
             android:textSize="18sp" />

@@ -46,6 +46,7 @@ public class ListAdapter1 extends ArrayAdapter<Faculty> {
 
         TextView Name;
         TextView Number;
+        TextView Dep;
     }
 
     @Override
@@ -65,6 +66,8 @@ public class ListAdapter1 extends ArrayAdapter<Faculty> {
 
             holder.Number = (TextView) convertView.findViewById(R.id.textviewPhoneNumber);
 
+            holder.Dep=(TextView)convertView.findViewById(R.id.textviewUsn);
+
             convertView.setTag(holder);
 
         } else {
@@ -77,6 +80,8 @@ public class ListAdapter1 extends ArrayAdapter<Faculty> {
         holder.Name.setText(student.getFname());
 
         holder.Number.setText(student.getFId());
+
+        holder.Dep.setText(student.getFDepa());
 
         return convertView;
 

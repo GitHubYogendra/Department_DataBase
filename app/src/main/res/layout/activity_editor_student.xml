@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back_image6">
+    android:background="#ffffff">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -12,12 +13,19 @@
         android:padding="16dp"
         tools:context=".EditorActivityStudent">
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="395dp"
+            android:layout_height="103dp"
+            app:srcCompat="@drawable/image1" />
+
+
         <TextView
             android:id="@+id/textView"
-            android:layout_width="229dp"
-            android:layout_height="50dp"
+            android:layout_width="395dp"
+            android:layout_height="45dp"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
+            android:layout_marginTop="107dp"
             android:gravity="center"
             android:text="STUDENT DETAILS."
             android:textColor="#000000"
@@ -26,25 +34,25 @@
 
         <TextView
             android:id="@+id/name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="175dp"
+            android:layout_height="31dp"
             android:layout_below="@+id/textView"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="132dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="207dp"
             android:text="Student Name."
             android:textColor="#000000"
             android:textSize="18dp"
             android:textStyle="italic" />
-
 
         <EditText
             android:id="@+id/Studentname1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/name"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="0dp"
             android:ems="10"
             android:gravity="center"
             android:hint="Enter Name Here"

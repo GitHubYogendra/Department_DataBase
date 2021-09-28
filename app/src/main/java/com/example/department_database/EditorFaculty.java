@@ -51,6 +51,7 @@ public class EditorFaculty extends AppCompatActivity {
     private EditText mMember;
     private EditText mAcademic;
     private EditText mFUnic;
+    private EditText mFDep;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -88,6 +89,7 @@ public class EditorFaculty extends AppCompatActivity {
         mMember = (EditText) findViewById(R.id.PUBMember1);
         mAcademic = (EditText) findViewById(R.id.EXPAcd1);
         mFUnic = (EditText)findViewById(R.id.Funiquq);
+        mFDep = (EditText)findViewById(R.id.FacDep1);
 
 
         Intent intent = getIntent();
@@ -123,6 +125,7 @@ public class EditorFaculty extends AppCompatActivity {
         mMember.setText(intent.getStringExtra("Member"));
         mAcademic.setText(intent.getStringExtra("Academic"));
         mFUnic.setText(intent.getStringExtra("FUniqe"));
+        mFDep.setText(intent.getStringExtra("FDep"));
 
     }
 
@@ -191,6 +194,7 @@ public class EditorFaculty extends AppCompatActivity {
         String Ind = mIndu.getText().toString().trim();
         String Aca = mAcademic.getText().toString().trim();
         String Funic = mFUnic.getText().toString().trim();
+        String FDepa = mFDep.getText().toString().trim();
 
         if (TextUtils.isEmpty(fname) && TextUtils.isEmpty(id) && TextUtils.isEmpty(phoneCo1) &&
                 TextUtils.isEmpty(Aadhar) && TextUtils.isEmpty(phoneCo2) && TextUtils.isEmpty(ComAdd) && TextUtils.isEmpty(phd) &&
@@ -198,7 +202,7 @@ public class EditorFaculty extends AppCompatActivity {
                 TextUtils.isEmpty(meClg) && TextUtils.isEmpty(meYear) && TextUtils.isEmpty(mePer) && TextUtils.isEmpty(Be) && TextUtils.isEmpty(BeClg) &&
                 TextUtils.isEmpty(BeYear) && TextUtils.isEmpty(BePer) && TextUtils.isEmpty(hsc) && TextUtils.isEmpty(hscClg) && TextUtils.isEmpty(hscYear) &&
                 TextUtils.isEmpty(hscPer) && TextUtils.isEmpty(sslc) && TextUtils.isEmpty(sslcClg) && TextUtils.isEmpty(sslcYear)&&TextUtils.isEmpty(sslcPer)&&
-        TextUtils.isEmpty(Award)&&TextUtils.isEmpty(member)&&TextUtils.isEmpty(Ind)&&TextUtils.isEmpty(Aca)&&TextUtils.isEmpty(Funic)) {
+        TextUtils.isEmpty(Award)&&TextUtils.isEmpty(member)&&TextUtils.isEmpty(Ind)&&TextUtils.isEmpty(Aca)&&TextUtils.isEmpty(Funic)&&TextUtils.isEmpty(FDepa)) {
 
             return;
         }
@@ -235,6 +239,7 @@ public class EditorFaculty extends AppCompatActivity {
         values.put(TeacherContact.TeacherEntry.COLUMN_FACULTY_PUBLICATION_MEMBERSHIP,member);
         values.put(TeacherContact.TeacherEntry.COLUMN_FACULTY_EXEPERIENCE_ACADEMIC,Aca);
         values.put(TeacherContact.TeacherEntry._ID,Funic);
+        values.put(TeacherContact.TeacherEntry.COLUMN_FACULTY_Dep,FDepa);
 
         if (values.containsKey(TeacherContact.TeacherEntry.COLUMN_FACULTY_NAME)) {
             String name = values.getAsString(TeacherContact.TeacherEntry.COLUMN_FACULTY_NAME);
@@ -327,6 +332,9 @@ public class EditorFaculty extends AppCompatActivity {
         }
         if (values.containsKey(TeacherContact.TeacherEntry.COLUMN_FACULTY_EXEPERIENCE_ACADEMIC)) {
             String name = values.getAsString(TeacherContact.TeacherEntry.COLUMN_FACULTY_EXEPERIENCE_ACADEMIC);
+        }
+        if (values.containsKey(TeacherContact.TeacherEntry.COLUMN_FACULTY_Dep)) {
+            String name = values.getAsString(TeacherContact.TeacherEntry.COLUMN_FACULTY_Dep);
         }
         if (values.size() == 0) {
             return;

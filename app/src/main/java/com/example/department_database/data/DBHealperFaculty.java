@@ -14,7 +14,7 @@ public class DBHealperFaculty extends SQLiteOpenHelper {
             TeacherContact.TeacherEntry.COLUMN_FACULTY_BE_PER+" VARCHAR, "+ TeacherContact.TeacherEntry.COLUMN_FACULTY_HSC+" VARCHAR, "+ TeacherContact.TeacherEntry.COLUMN_FACULTY_HSC_CLG_NAME+" VARCHAR, "+ TeacherContact.TeacherEntry.COLUMN_FACULTY_HSC_QUL_YEAR+" VARCHAR, "+
             TeacherContact.TeacherEntry.COLUMN_FACULTY_HSC_PER+" VARCHAR, "+ TeacherContact.TeacherEntry.COLUMN_FACULTY_SSLC+" VARCHAR, "+ TeacherContact.TeacherEntry.COLUMN_FACULTY_SSLC_SCH_NAME+" VARCHAR, "+ TeacherContact.TeacherEntry.COLUMN_FACULTY_SSLC_QUAL_YEAR+" VARCHAR, "+
             TeacherContact.TeacherEntry.COLUMN_FACULTY_SSLC_PERCENTAGE+" VARCHAR, "+ TeacherContact.TeacherEntry.COLUMN_FACULTY_EXEPERIENCE_ACADEMIC+" VARCHAR, "+ TeacherContact.TeacherEntry.COLUMN_FACULTY_EXEPERIENCE_INDUSTRY+" VARCHAR, "+ TeacherContact.TeacherEntry.COLUMN_FACULTY_PUBLICATION_AWARDS+" VARCHAR, "+
-            TeacherContact.TeacherEntry.COLUMN_FACULTY_PUBLICATION_MEMBERSHIP+ " VARCHAR);";
+            TeacherContact.TeacherEntry.COLUMN_FACULTY_Dep+" VARCHAR, "+TeacherContact.TeacherEntry.COLUMN_FACULTY_PUBLICATION_MEMBERSHIP+ " VARCHAR);";
 
     public DBHealperFaculty(Context context) {
         super(context, DATABASE_NAME2, null, 1);

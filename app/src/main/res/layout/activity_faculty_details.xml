@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back_image6">
+    android:background="#ffffff">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -12,23 +13,31 @@
         android:padding="16dp"
         tools:context=".FacultyDetails">
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="395dp"
+            android:layout_height="103dp"
+            app:srcCompat="@drawable/image1" />
+
+
         <TextView
-            android:text="Insert Faculty Details"
-            android:layout_width="wrap_content"
-            android:gravity="center"
-            android:textSize="21dp"
-            android:textColor="#000000"
+            android:id="@+id/textView1"
+            android:layout_width="395dp"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:id="@+id/textView1"/>
+            android:layout_marginTop="113dp"
+            android:gravity="center"
+            android:text="Insert Faculty Details"
+            android:textColor="#000000"
+            android:textSize="21dp" />
 
         <EditText
             android:id="@+id/Facultyname"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView1"
-            android:layout_marginTop="22dp"
+            android:layout_marginTop="15dp"
             android:ems="10"
             android:gravity="center"
             android:hint="Enter Faculty Name Here"
@@ -46,10 +55,21 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/FacCommAdd"
+            android:id="@+id/Facdep"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/FacId"
+            android:layout_marginTop="19dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Faculty DEPARTMENT"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/FacCommAdd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Facdep"
             android:layout_marginTop="19dp"
             android:ems="10"
             android:gravity="center"

@@ -80,7 +80,7 @@ public class StudentDetails extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(StudentDetails.this, SearchSQLiteActivity.class);
+                Intent intent = new Intent(StudentDetails.this, SearchCato.class);
                 startActivity(intent);
             }
         });

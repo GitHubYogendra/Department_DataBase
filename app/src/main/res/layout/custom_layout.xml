@@ -25,6 +25,16 @@
         android:textSize="20dp"
         android:textColor="#000000"
         />
+    <TextView
+        android:id="@+id/textviewUsn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textviewName"
+        android:text="Subject Full Form"
+        android:layout_below="@+id/textviewPhoneNumber"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        />
 
 
 </RelativeLayout>

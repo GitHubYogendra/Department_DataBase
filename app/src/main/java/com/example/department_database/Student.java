@@ -108,6 +108,10 @@ public class Student {
 
     }
 
+    public void setCurrentYear(String currentYear) {
+        CurrentYear = currentYear;
+    }
+
     public String getPhoneNumber() {
         return phoneNumber;
     }

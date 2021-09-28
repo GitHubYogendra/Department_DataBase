@@ -10,59 +10,70 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Department_DataBase">
         <activity
+            android:name=".SearchFac"
+            android:exported="true"
+            android:label="Search Faculty's"
+            android:parentActivityName=".Main_Menu" />
+        <activity
+            android:name=".SearchCato"
+            android:exported="true"
+            android:label="Search Student&apos;s"
+            android:parentActivityName=".Main_Menu" />
+        <activity
             android:name=".EditorFaculty"
-            android:label="Edit Faculty Details"
-            android:exported="true" />
+            android:exported="true"
+            android:label="Edit Faculty Details" />
         <activity
             android:name=".SearchFaculty"
-            android:label="Search Faculty's"
-            android:parentActivityName=".Main_Menu"
-            android:exported="true" />
+            android:exported="true"
+            android:label="Search Faculty&apos;s"
+            android:parentActivityName=".Main_Menu" />
         <activity
             android:name=".FacultyDetails"
+            android:exported="true"
             android:label="Add New Faculty Details"
-            android:parentActivityName=".Main_Menu"
-            android:exported="true" />
+            android:parentActivityName=".Main_Menu" />
         <activity
             android:name=".EditorActivityStudent"
-            android:label="Edit Student Details"
-            android:exported="true" />
+            android:exported="true"
+            android:label="Edit Student Details" />
         <activity
             android:name=".SearchSQLiteActivity"
-            android:label="Search Student's"
-            android:parentActivityName=".Main_Menu"
-            android:exported="true" />
+            android:exported="true"
+            android:label="Search Student&apos;s"
+            android:parentActivityName=".Main_Menu" />
         <activity
             android:name=".StudentDetails"
+            android:exported="true"
             android:label="Add New Student Details"
-            android:parentActivityName=".Main_Menu"
-            android:exported="true" />
+            android:parentActivityName=".Main_Menu" />
         <activity
             android:name=".Log_In"
-            android:label="Log In"
-            android:exported="true" />
+            android:exported="true"
+            android:label="Log In" />
         <activity
             android:name=".Main_Menu"
-            android:label="Main Menu"
-            android:exported="true" />
+            android:exported="true"
+            android:label="Main Menu" />
         <activity
             android:name=".Reset_password"
-            android:label="Reset password"
-            android:exported="true" />
+            android:exported="true"
+            android:label="Reset password" />
         <activity
             android:name=".Forget_password"
-            android:label="Forget Password"
-            android:exported="true" />
+            android:exported="true"
+            android:label="Forget Password" />
         <activity
             android:name=".Create_Account"
-            android:label="Create Account"
-            android:exported="true" />
+            android:exported="true"
+            android:label="Create Account" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Main_Menu" />
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

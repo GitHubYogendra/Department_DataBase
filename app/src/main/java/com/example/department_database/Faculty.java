@@ -32,12 +32,13 @@ public class Faculty {
     String FIndstry = null;
     String FAcademic = null;
     String FUnique = null;
+    String FDepa = null;
 
     public Faculty (String mFname,String mFId,String mFphoneNumber1,String mFphoneNumber2,String mFCommAdd,String mFAadharNum,
                     String mFPhd1,String mFPhdYear,String mFPhdClgName,String mFPhdPer,String mFME1,String mFMeyear,String mFMeClgName,
                     String mFMePer,String mFBe1,String mFBeClgName,String mFBeYear,String mFBePer,String mFHsc1,String mFHscClgName,
                     String mFHscYear,String mFHscPer,String mFSslc1,String mFSslcClgName,String mFSslcYear,String mFSslcPer,String mFAward,
-                    String mFMember,String mFIndstry,String mFAcademic,String mFUnique){
+                    String mFMember,String mFIndstry,String mFAcademic,String mFUnique,String mFDapa){
         super();
 
         this.Fname = mFname;
@@ -71,10 +72,15 @@ public class Faculty {
         this.FIndstry= mFIndstry;
         this.FAcademic = mFAcademic;
         this.FUnique = mFUnique;
+        this.FDepa = mFDapa;
     }
 
     public void setFname(String fname) {
         Fname = fname;
+    }
+
+    public String getFDepa() {
+        return FDepa;
     }
 
     public String getFname() {

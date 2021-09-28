@@ -20,10 +20,10 @@ public class FacultyDetails extends AppCompatActivity {
 
     SQLiteDatabase sqLiteDatabase1;
     Boolean EditTextEmptyHold1;
-    EditText getFacultyNAME1, getFacultyPhoneNumber1, getFacultyId1, getFacultyPhoneNumber21, getFacultyCommAdd1, getFacultyAadharNo1, getFacultyPhd1, geFacultyPhdQYear1;
+    EditText getFacultyNAME1, getFacultyPhoneNumber1, getFacultyId1, getFacultyPhoneNumber21, getFacultyCommAdd1, getFacultyAadharNo1, getFacultyPhd1, geFacultyPhdQYear1,getFacultyDep;
     EditText getFacultyPhdClgName1, getFacultyPhdPer1, getFacultyMe1, getFacultyMeQYear1, getFacultyMeClgName1, getFacultyMePer1, getFacultyBe1, getFacultyBeQYear, getFacultyBeClgName1, getFacultyBePer1, getFacultyHsc1, getFacultyHscQYear, getFacultyHscClgName, getFacultyHscPer, getFacultySslc1, getFacultySslcQyear, getFacultySslcClgNAme, getFacultySslcPer, getFacultyAward, getFacultyMambership, getFacultyAcademic, getFacultyIndustry;
     Button SubmitData1, ShowData1;
-    String Fname, FphoneNumber1, FphoneNumber2, FId, FCommAdd, FAadharNum, FPhd1, FPhdYear, FPhdClgName, FPhdPer, FME1, FMeyear, FMeClgName, FMePer, FBe1, FBeClgName, FBeYear, FBePer, FHsc1, FHscClgName, FHscYear, FHscPer, FSslc1, FSslcClgName, FSslcYear, FSslcPer, FAward, FMember, FIndstry, FAcademic, query;
+    String Fname, FphoneNumber1, FphoneNumber2, FId, FCommAdd, FAadharNum, FPhd1, FPhdYear, FPhdClgName, FPhdPer, FME1, FMeyear, FMeClgName, FMePer, FBe1, FBeClgName, FBeYear, FBePer, FHsc1, FHscClgName, FHscYear, FHscPer, FSslc1, FSslcClgName, FSslcYear, FSslcPer, FAward, FMember, FIndstry, FAcademic, query,FDep;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +62,7 @@ public class FacultyDetails extends AppCompatActivity {
         getFacultyMambership = (EditText) findViewById(R.id.PUBMember);
         SubmitData1 = (Button) findViewById(R.id.buttonToInsert);
         ShowData1 = (Button) findViewById(R.id.buttontoSearch);
+        getFacultyDep = (EditText)findViewById(R.id.Facdep);
 
         SubmitData1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,7 +84,7 @@ public class FacultyDetails extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(FacultyDetails.this, SearchFaculty.class);
+                Intent intent = new Intent(FacultyDetails.this, SearchFac.class);
                 startActivity(intent);
             }
         });
@@ -104,7 +105,7 @@ public class FacultyDetails extends AppCompatActivity {
                 TeacherContact.TeacherEntry.COLUMN_FACULTY_BE_PER + " VARCHAR, " + TeacherContact.TeacherEntry.COLUMN_FACULTY_HSC + " VARCHAR, " + TeacherContact.TeacherEntry.COLUMN_FACULTY_HSC_CLG_NAME + " VARCHAR, " + TeacherContact.TeacherEntry.COLUMN_FACULTY_HSC_QUL_YEAR + " VARCHAR, " +
                 TeacherContact.TeacherEntry.COLUMN_FACULTY_HSC_PER + " VARCHAR, " + TeacherContact.TeacherEntry.COLUMN_FACULTY_SSLC + " VARCHAR, " + TeacherContact.TeacherEntry.COLUMN_FACULTY_SSLC_SCH_NAME + " VARCHAR, " + TeacherContact.TeacherEntry.COLUMN_FACULTY_SSLC_QUAL_YEAR + " VARCHAR, " +
                 TeacherContact.TeacherEntry.COLUMN_FACULTY_SSLC_PERCENTAGE + " VARCHAR, " + TeacherContact.TeacherEntry.COLUMN_FACULTY_EXEPERIENCE_ACADEMIC + " VARCHAR, " + TeacherContact.TeacherEntry.COLUMN_FACULTY_EXEPERIENCE_INDUSTRY + " VARCHAR, " + TeacherContact.TeacherEntry.COLUMN_FACULTY_PUBLICATION_AWARDS + " VARCHAR, " +
-                TeacherContact.TeacherEntry.COLUMN_FACULTY_PUBLICATION_MEMBERSHIP + " VARCHAR);");
+                TeacherContact.TeacherEntry.COLUMN_FACULTY_Dep+" VARCHAR, "+TeacherContact.TeacherEntry.COLUMN_FACULTY_PUBLICATION_MEMBERSHIP + " VARCHAR);");
     }
 
     public void CheckEditTextStatus1() {
@@ -139,6 +140,7 @@ public class FacultyDetails extends AppCompatActivity {
         FMember = getFacultyMambership.getText().toString();
         FIndstry = getFacultyIndustry.getText().toString();
         FAcademic = getFacultyAcademic.getText().toString();
+        FDep = getFacultyDep.getText().toString();
 
         if (TextUtils.isEmpty(Fname) || TextUtils.isEmpty(FphoneNumber1) || TextUtils.isEmpty(FphoneNumber2) || TextUtils.isEmpty(FId) ||
                 TextUtils.isEmpty(FCommAdd) || TextUtils.isEmpty(FAadharNum) || TextUtils.isEmpty(FPhd1) || TextUtils.isEmpty(FPhdYear) ||
@@ -146,7 +148,7 @@ public class FacultyDetails extends AppCompatActivity {
                 TextUtils.isEmpty(FMePer) || TextUtils.isEmpty(FBe1) || TextUtils.isEmpty(FBeClgName) || TextUtils.isEmpty(FBeYear) || TextUtils.isEmpty(FBePer) ||
                 TextUtils.isEmpty(FHsc1) || TextUtils.isEmpty(FHscClgName) || TextUtils.isEmpty(FHscYear) || TextUtils.isEmpty(FHscPer) || TextUtils.isEmpty(FSslc1) ||
                 TextUtils.isEmpty(FSslcClgName) || TextUtils.isEmpty(FSslcYear) || TextUtils.isEmpty(FSslcPer) || TextUtils.isEmpty(FAward) || TextUtils.isEmpty(FMember) ||
-                TextUtils.isEmpty(FIndstry) || TextUtils.isEmpty(FAcademic)) {
+                TextUtils.isEmpty(FIndstry) || TextUtils.isEmpty(FAcademic)||TextUtils.isEmpty(FDep)) {
 
             EditTextEmptyHold1 = false;
 
@@ -160,8 +162,8 @@ public class FacultyDetails extends AppCompatActivity {
 
         if (EditTextEmptyHold1 == true) {
 
-            query = "INSERT INTO " + TeacherContact.TeacherEntry.TABLE_NAME + " (nameT,FaculityIdT,AadharNumberT,addressT,phoneNum1T,phoneNum2T,imageT,phdQualYearT,phdClgNameT,phdPercentageT,meBranchT,meQualYearT,meClgNameT,mePercentageT,BEBranchT,BEQualYearT,BEClgNameT,BEPercentageT,HSCBranchT,HSCClgNameT,HSCQualYearT,HSCPercentageT,SSLCBranchT,SSLCQualYearT,SSLCSchNameT,SSLCPercentageT,EXEPAcademicT,EXEPIndustryT,PUBLMemberT,PUBLAwardsT) " +
-                    "VALUES('" + Fname + "','" + FId + "','" + FAadharNum + "','" + FCommAdd + "','" + FphoneNumber1 + "','" + FphoneNumber2 + "','" + FPhd1 + "','" + FPhdYear + "','" + FPhdClgName + "','" + FPhdPer + "','" + FME1 + "','" + FMeyear + "','" + FMeClgName + "','" + FMePer + "','" + FBe1 + "','" + FBeYear + "','" + FBeClgName + "','" + FBePer + "','" + FHsc1 + "','" + FHscClgName + "','" + FHscYear + "','" + FHscPer + "','" + FSslc1 + "','" + FSslcYear + "','" + FSslcClgName + "','" + FSslcPer + "','" + FAcademic + "','" + FIndstry + "','" + FMember + "','" + FAward + "');";
+            query = "INSERT INTO " + TeacherContact.TeacherEntry.TABLE_NAME + " (nameT,FaculityIdT,AadharNumberT,addressT,phoneNum1T,phoneNum2T,imageT,phdQualYearT,phdClgNameT,phdPercentageT,meBranchT,meQualYearT,meClgNameT,mePercentageT,BEBranchT,BEQualYearT,BEClgNameT,BEPercentageT,HSCBranchT,HSCClgNameT,HSCQualYearT,HSCPercentageT,SSLCBranchT,SSLCQualYearT,SSLCSchNameT,SSLCPercentageT,EXEPAcademicT,EXEPIndustryT,PUBLMemberT,PUBLAwardsT,depT) " +
+                    "VALUES('" + Fname + "','" + FId + "','" + FAadharNum + "','" + FCommAdd + "','" + FphoneNumber1 + "','" + FphoneNumber2 + "','" + FPhd1 + "','" + FPhdYear + "','" + FPhdClgName + "','" + FPhdPer + "','" + FME1 + "','" + FMeyear + "','" + FMeClgName + "','" + FMePer + "','" + FBe1 + "','" + FBeYear + "','" + FBeClgName + "','" + FBePer + "','" + FHsc1 + "','" + FHscClgName + "','" + FHscYear + "','" + FHscPer + "','" + FSslc1 + "','" + FSslcYear + "','" + FSslcClgName + "','" + FSslcPer + "','" + FAcademic + "','" + FIndstry + "','" + FMember + "','" + FAward + "','"+FDep+"');";
             sqLiteDatabase1.execSQL(query);
 
             Toast.makeText(FacultyDetails.this, "Data Inserted Successfully", Toast.LENGTH_LONG).show();
@@ -204,5 +206,6 @@ public class FacultyDetails extends AppCompatActivity {
         getFacultyMambership.getText().clear();
         getFacultyIndustry.getText().clear();
         getFacultyAcademic.getText().clear();
+        getFacultyDep.getText().clear();
     }
 }

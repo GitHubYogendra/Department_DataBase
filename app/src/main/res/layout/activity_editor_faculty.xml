@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back_image1">
+    android:background="#ffffff">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -12,12 +13,19 @@
         android:padding="16dp"
         tools:context=".EditorFaculty">
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="395dp"
+            android:layout_height="103dp"
+            app:srcCompat="@drawable/image1" />
+
         <TextView
             android:id="@+id/textView1"
-            android:layout_width="206dp"
-            android:layout_height="45dp"
+            android:layout_width="395dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
+            android:layout_marginTop="105dp"
             android:gravity="center"
             android:text="Faculty Details."
             android:textColor="#000000"
@@ -26,11 +34,11 @@
 
         <TextView
             android:id="@+id/FN"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="131dp"
+            android:layout_height="34dp"
             android:layout_below="@+id/textView1"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="145dp"
             android:text="Faculty Name:"
             android:textColor="#000000"
             android:textSize="18dp"
@@ -41,7 +49,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/FN"
-            android:layout_marginTop="7dp"
+            android:layout_marginTop="8dp"
             android:ems="10"
             android:gravity="center"
             android:hint="Enter Faculty Name Here"
@@ -65,17 +73,41 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/Fd"
-            android:layout_marginTop="3dp"
+            android:layout_marginTop="2dp"
             android:ems="10"
             android:gravity="center"
             android:hint="Enter Faculty ID Here"
             android:inputType="textPersonName" />
 
         <TextView
+            android:id="@+id/FdDep"
+            android:layout_width="224dp"
+            android:layout_height="27dp"
+            android:layout_below="@+id/FacId1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="171dp"
+            android:text="Faculty Department:"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/FacDep1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/FdDep"
+            android:layout_marginTop="6dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Faculty Department Here"
+            android:inputType="textPersonName" />
+
+        <TextView
             android:id="@+id/FCA"
             android:layout_width="335dp"
             android:layout_height="28dp"
-            android:layout_below="@+id/FacId1"
+            android:layout_below="@+id/FacDep1"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="113dp"

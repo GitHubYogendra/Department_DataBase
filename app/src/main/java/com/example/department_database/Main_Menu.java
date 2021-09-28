@@ -17,9 +17,7 @@ public class Main_Menu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
         TextView Student = (TextView) findViewById(R.id.button3);
-        TextView Search = (TextView) findViewById(R.id.button4);
         TextView Faculty = (TextView) findViewById(R.id.button1);
-        TextView FacultySearch = (TextView) findViewById(R.id.button2);
 
         Student.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,24 +26,10 @@ public class Main_Menu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        Search.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), SearchSQLiteActivity.class);
-                startActivity(intent);
-            }
-        });
         Faculty.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), FacultyDetails.class);
-                startActivity(intent);
-            }
-        });
-        FacultySearch.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), SearchFaculty.class);
                 startActivity(intent);
             }
         });
