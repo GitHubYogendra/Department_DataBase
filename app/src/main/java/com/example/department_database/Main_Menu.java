@@ -22,14 +22,14 @@ public class Main_Menu extends AppCompatActivity {
         Student.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), StudentDetails.class);
+                Intent intent = new Intent(getApplicationContext(), StudentNavegation.class);
                 startActivity(intent);
             }
         });
         Faculty.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), FacultyDetails.class);
+                Intent intent = new Intent(getApplicationContext(), facultyNavegation.class);
                 startActivity(intent);
             }
         });

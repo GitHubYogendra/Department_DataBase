@@ -10,9 +10,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Department_DataBase">
         <activity
+            android:name=".FacultyTable"
+            android:exported="true" />
+        <activity
+            android:name=".StudentTable"
+            android:exported="true" />
+        <activity
+            android:name=".StudentNavegation"
+            android:exported="true" />
+        <activity
+            android:name=".facultyNavegation"
+            android:exported="true"
+            android:label="Faculty&apos;s menu"
+            android:parentActivityName=".Main_Menu" />
+        <activity
             android:name=".SearchFac"
             android:exported="true"
-            android:label="Search Faculty's"
+            android:label="Search Faculty&apos;s"
             android:parentActivityName=".Main_Menu" />
         <activity
             android:name=".SearchCato"

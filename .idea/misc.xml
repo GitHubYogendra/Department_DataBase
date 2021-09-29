@@ -22,6 +22,8 @@
         <entry key="app/src/main/res/layout/activity_editor_faculty.xml" value="0.24320652173913043" />
         <entry key="app/src/main/res/layout/activity_editor_student.xml" value="0.24864130434782608" />
         <entry key="app/src/main/res/layout/activity_faculty_details.xml" value="0.26222826086956524" />
+        <entry key="app/src/main/res/layout/activity_faculty_navegation.xml" value="0.24456521739130435" />
+        <entry key="app/src/main/res/layout/activity_faculty_table.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_forget_password.xml" value="0.2427536231884058" />
         <entry key="app/src/main/res/layout/activity_log_in.xml" value="0.2427536231884058" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
@@ -37,6 +39,10 @@
         <entry key="app/src/main/res/layout/activity_search_sqlite2.xml" value="0.2441123188405797" />
         <entry key="app/src/main/res/layout/activity_student_data_base.xml" value="0.2427536231884058" />
         <entry key="app/src/main/res/layout/activity_student_details.xml" value="0.2441123188405797" />
+        <entry key="app/src/main/res/layout/activity_student_navegation.xml" value="0.24456521739130435" />
+        <entry key="app/src/main/res/layout/activity_student_table.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/custom1.xml" value="0.1686746987951807" />
+        <entry key="app/src/main/res/layout/custom2.xml" value="0.25" />
         <entry key="app/src/main/res/layout/custom_layout.xml" value="0.2427536231884058" />
         <entry key="app/src/main/res/layout/custom_layout1.xml" value="0.25271739130434784" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.25679347826086957" />

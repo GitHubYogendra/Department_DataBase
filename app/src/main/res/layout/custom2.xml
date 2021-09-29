@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textviewName21"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="Name"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/textviewId21"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Id"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewDep21"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Department"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewPhone11"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Phone1 "
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewPhone21"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Phone2"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewAadhar21"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text=" AadharNo "
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewAddress21"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Address "
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewPhd21"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Phd "
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewPhdClg21"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="PhdClgName "
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewPhdPer21"
+            android:layout_width="236dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="PhdPer "
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewPhdPass21"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="PhdPass "
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewMe21"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text=" ME"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewMeClgName21"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="ME Clg Name "
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewMePer21"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="ME Per "
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewMePass21"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="ME Pass "
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewBe21"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="BE "
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewBeClgName21"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="BE ClgName"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewBePer21"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="BE Per"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewBePass21"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="BE Pass "
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewHsc21"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Hsc"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewHscClgName21"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="HscClgName"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewHscPer21"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="HscPer"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewHscPass21"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="HscPass"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewSSLC21"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="SSLC"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewSSLCCLGNAME21"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="SSLCClgName"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewSSLCPER21"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="SSLC Per"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewSSLCPASS21"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="SSLC Pass"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewPubAward21"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Pub Award"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewPubMember21"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Pub Member"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewExpInd21"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Exp Ind"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewExpAcademic21"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Exp Academic"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+</HorizontalScrollView>

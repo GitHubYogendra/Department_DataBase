@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textviewName"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="Subject Name"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/textviewUsn"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Subject Full Usn"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewYear"
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Subject Full Year"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewSem"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Subject Sem "
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewContectNo"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Subject PhoneNo "
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewAadhar"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Subject AadharNo "
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewFN"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Subject FN "
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewMN"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Subject MN "
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewBlood"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Subject Blood "
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewAddress"
+            android:layout_width="236dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Subject Address "
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewDay"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Subject Day "
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewFUN"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Subject FUN "
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewMUN"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Subject MUN "
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewDip"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Subject Dip "
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewDipClg"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Subject DipClg "
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewDipPer"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Subject DipPer "
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewDipPass"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Subject DipPass"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewHsc"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Subject Hsc"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewHscClg"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Subject HscClg "
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewHscPer"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Subject HscPer"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewHscPass"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Subject HscPass"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewSSLC"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Subject SSLC"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewSSLCSCH"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Subject SSLCSCH "
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewSSLCPER"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Subject SSLCPER"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textviewSSLCPASS"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textviewName"
+            android:paddingLeft="5dp"
+            android:text="Subject SSLCPASS"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+    </LinearLayout>
+</HorizontalScrollView>

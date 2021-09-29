@@ -134,6 +134,7 @@ public class ListAdapter extends ArrayAdapter<Student> {
                 add(StudentListTemp.get(i));
 
             notifyDataSetInvalidated();
+
         }
     }
 }
